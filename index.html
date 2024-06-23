@@ -27,6 +27,23 @@
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .summaries {
+            display: none;
+            margin-top: 10px;
+        }
+        .item.expanded .summaries {
+            display: block;
+        }
+        .toggle-btn {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+        .summary-item {
+            margin-top: 5px;
+        }
+    </style>
     
 </head> 
 
@@ -68,103 +85,175 @@
                         <h2 class="heading">Projects on Github</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title"><a href="https://github.com/Praveenk8051/deep-learning" target="_blank">Deep-Learning</a> </h3>
-                                <p class="summary">This repository contains the work related to deep-learning. Various algorithms, general framework of classification code, object detection and many other experiments.</p>
-                                
-                            <div class="item">
-                                <h3 class="title"><a href="https://github.com/Praveenk8051/image-generation-vae" target="_blank">Image-Generation using VAE</a> </h3>
-                                <p class="summary">In order to generate more images the latent space(bottleneck) consisting of vectors is altered. More can be found in the link</p>
-                                    
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="https://github.com/Praveenk8051/data-science" target="_blank">Data Science</a></h3>
-                                <p class="summary">Data Science based experiment on LSTM Keras and visualisation techniques using Dash. </p>
-                                
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="https://github.com/Praveenk8051/python-scripts-projects" target="_blank">Python Scripts</a></h3>
-                                <p class="summary">Small and periodically used python scripts for handy purposes.</p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title"><a href="https://github.com/Praveenk8051/image-processing-scripts" target="_blank">Image Processing Scripts</a></h3>
-                                <p class="summary">Image Processing based script involving different functionalities like contours detection, blurring and rotating.</p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title"><a href="https://github.com/Praveenk8051/computer-vision" target="_blank">Computer Vision</a></h3>
-                                <p class="summary">Computer Vision based motion tracking project that was implemented as a part of curriculum.</p>    
+                                <h3 class="title toggle-btn">Deep-Learning</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://example.com/deep-learning-1" target="_blank">Deep-Learning Overview</a></div>
+                                    <div class="summary-item"><a href="https://example.com/deep-learning-2" target="_blank">Deep-Learning Algorithms</a></div>
+                                    <div class="summary-item"><a href="https://example.com/deep-learning-3" target="_blank">Deep-Learning Projects</a></div>
+                                </div>
                             </div><!--//item-->
                             
-                            <a class="btn btn-cta-secondary" href="https://github.com/Praveenk8051?tab=repositories">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
+                            <div class="item">
+                                <h3 class="title toggle-btn">Image-Generation using VAE</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://example.com/vae-1" target="_blank">VAE Introduction</a></div>
+                                    <div class="summary-item"><a href="https://example.com/vae-2" target="_blank">VAE Techniques</a></div>
+                                    <div class="summary-item"><a href="https://example.com/vae-3" target="_blank">VAE Applications</a></div>
+                                </div>
+                            </div><!--//item-->
                             
+                            <div class="item">
+                                <h3 class="title toggle-btn">Data Science</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://example.com/data-science-1" target="_blank">Data Science Basics</a></div>
+                                    <div class="summary-item"><a href="https://example.com/data-science-2" target="_blank">Data Science Techniques</a></div>
+                                    <div class="summary-item"><a href="https://example.com/data-science-3" target="_blank">Data Science Projects</a></div>
+                                </div>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title toggle-btn">Python Scripts</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://example.com/python-scripts-1" target="_blank">Useful Python Scripts</a></div>
+                                    <div class="summary-item"><a href="https://example.com/python-scripts-2" target="_blank">Python Script Examples</a></div>
+                                    <div class="summary-item"><a href="https://example.com/python-scripts-3" target="_blank">Python Scripting Tips</a></div>
+                                </div>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title toggle-btn">Image Processing Scripts</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://example.com/image-processing-1" target="_blank">Image Processing Basics</a></div>
+                                    <div class="summary-item"><a href="https://example.com/image-processing-2" target="_blank">Image Processing Techniques</a></div>
+                                    <div class="summary-item"><a href="https://example.com/image-processing-3" target="_blank">Image Processing Projects</a></div>
+                                </div>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title toggle-btn">Computer Vision</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://example.com/computer-vision-1" target="_blank">Computer Vision Introduction</a></div>
+                                    <div class="summary-item"><a href="https://example.com/computer-vision-2" target="_blank">Computer Vision Techniques</a></div>
+                                    <div class="summary-item"><a href="https://example.com/computer-vision-3" target="_blank">Computer Vision Projects</a></div>
+                                </div>
+                            </div><!--//item-->
+                            <a class="btn btn-cta-secondary" href="https://github.com/xxxx?tab=repositories">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var toggleButtons = document.querySelectorAll('.toggle-btn');
+                        toggleButtons.forEach(function(btn) {
+                            btn.addEventListener('click', function() {
+                                var item = this.parentNode;
+                                item.classList.toggle('expanded');
+                            });
+                        });
+                    });
+                </script>
 
                 <section class="blog section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Technical Blogs</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title"><a href="https://medium.com/@praveenkrishna/automating-the-matched-filter-using-neural-nets-73c753615845" target="_blank">Automating the Matched Filter using Neural Nets</a> </h3>
-                                <p class="summary">Simple automation saves a lot of time. This blog is explanation of my research project which involves application of ML algorithm to automate Matched Filter concept in Signal Processing. Click on the topic to get more insights about it.</p>
-                                
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="https://medium.com/@praveenkrishna/deep-learning-based-pitch-detection-cnn-lstm-3a2c5477c4e6" target="_blank">Deep Learning based Pitch Detection (CNN, LSTM)</a> </h3>
-                                <p class="summary">This blog explains my Master thesis. The idea behind it is to use synthetic data to generate enough dataset to train a model. Later, the model is tested wih real-world data and performance is tested. Click on the topic to get more insights on this.. </p>
-                            
-                            <div class="item">
-                                <h3 class="title"><a href="https://praveenkrishna.medium.com/create-synthetic-images-using-opencv-python-3e21f9bc18dd" target="_blank">Create Synthetic Images using OpenCV (Python)</a></h3>
-                                <p class="summary">Separation of foreground and background images to produce different synthetic images. Subjective analysis on the image to check realism</p>
+                                <h3 class="title toggle-btn">Automating the Matched Filter using Neural Nets</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://medium.com/@xxxx/automating-the-matched-filter-using-neural-nets-73c753615845" target="_blank">Read Blog on Medium</a></div>
+                                    <div class="summary-item"><a href="https://example.com/matched-filter-research" target="_blank">Research Paper</a></div>
+                                    <div class="summary-item"><a href="https://example.com/matched-filter-video" target="_blank">Video Explanation</a></div>
+                                </div>
                             </div><!--//item-->
 
                             <div class="item">
-                                <h3 class="title"><a href="https://praveenkrishna.medium.com/image-generation-using-variational-autoencoder-with-code-part-1-abed19b278b1" target="_blank">Image Generation Using Variational Autoencoder — With Code — Part 1</a></h3>
-                                <p class="summary">What if we have less images and would like to generate more with slight changes in original ones. This blog tells more about it.</p>
-                            </div><!--//item-->
-
-
-                            <div class="item">
-                                <h3 class="title"><a href="https://praveenkrishna.medium.com/image-generation-using-variational-autoencoder-with-code-part-2-16cd0ff40fcc" target="_blank">Image Generation Using Variational Autoencoder — With Code — Part 2</a></h3>
-                                <p class="summary">This part of the blog consists of explanation about variational autoencoder, math behind it, code and the result</p>
-                            </div><!--//item-->
-
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="https://medium.com/@praveenkrishna/kaggle-getting-started-digit-recognizer-f1721b82c542" target="_blank">Kaggle —”Getting Started” - Digit Recognizer</a> </h3>
-                                <p class="summary">The method used to perform the Kaggle competition is explained briefly. Click on the topic to get more insights about it.</p>
-                                
+                                <h3 class="title toggle-btn">Deep Learning based Pitch Detection (CNN, LSTM)</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://medium.com/@xxxx/deep-learning-based-pitch-detection-cnn-lstm-3a2c5477c4e6" target="_blank">Read Blog on Medium</a></div>
+                                    <div class="summary-item"><a href="https://example.com/pitch-detection-code" target="_blank">Code Repository</a></div>
+                                    <div class="summary-item"><a href="https://example.com/pitch-detection-video" target="_blank">Video Tutorial</a></div>
+                                </div>
                             </div><!--//item-->
                             
                             <div class="item">
-                                <h3 class="title"><a href="https://medium.com/@praveenkrishna/downgrade-cuda-for-tensorflow-gpu-17831db59099" target="_blank">Downgrade CUDA for Tensorflow-GPU</a></h3>
-                                <p class="summary">Out of many sleepless errors I have encountered, the CuDA issue to run the deep learning training really had caused big problem. A small blog on how it can be handled easily. Click on the topic to get more insights about it.</p>
+                                <h3 class="title toggle-btn">Create Synthetic Images using OpenCV (Python)</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://xxxx.medium.com/create-synthetic-images-using-opencv-python-3e21f9bc18dd" target="_blank">Read Blog on Medium</a></div>
+                                    <div class="summary-item"><a href="https://example.com/synthetic-images-code" target="_blank">Code Repository</a></div>
+                                    <div class="summary-item"><a href="https://example.com/synthetic-images-video" target="_blank">Video Tutorial</a></div>
+                                </div>
                             </div><!--//item-->
-
-                           
+                            
                             <div class="item">
-                                <h3 class="title"><a href="https://praveenkrishna.medium.com/basics-for-beginners-machine-learning-part-1-fbd9550fc67f" target="_blank">Basics for Beginners — Machine Learning — Part 1</a></h3>
-                                <p class="summary">Series of basics of machine learning - part 1</p>
+                                <h3 class="title toggle-btn">Image Generation Using Variational Autoencoder—With Code—Part 1</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://xxxx.medium.com/image-generation-using-variational-autoencoder-with-code-part-1-abed19b278b1" target="_blank">Read Blog on Medium</a></div>
+                                    <div class="summary-item"><a href="https://example.com/vae-part1-code" target="_blank">Code Repository</a></div>
+                                    <div class="summary-item"><a href="https://example.com/vae-part1-video" target="_blank">Video Tutorial</a></div>
+                                </div>
                             </div><!--//item-->
-
+                            
                             <div class="item">
-                                <h3 class="title"><a href="https://praveenkrishna.medium.com/basics-for-beginners-neural-networks-part-2-8aea2b105aa0" target="_blank">Basics for Beginners — Neural Networks — Part 2</a></h3>
-                                <p class="summary">Series of basics of machine learning - part 2</p>
+                                <h3 class="title toggle-btn">Image Generation Using Variational Autoencoder—With Code—Part 2</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://xxxx.medium.com/image-generation-using-variational-autoencoder-with-code-part-2-16cd0ff40fcc" target="_blank">Read Blog on Medium</a></div>
+                                    <div class="summary-item"><a href="https://example.com/vae-part2-code" target="_blank">Code Repository</a></div>
+                                    <div class="summary-item"><a href="https://example.com/vae-part2-video" target="_blank">Video Tutorial</a></div>
+                                </div>
                             </div><!--//item-->
-
-
+                            
                             <div class="item">
-                                <h3 class="title"><a href="https://praveenkrishna.medium.com/basics-for-beginners-paradigms-of-learning-part-3-b72840a5a728" target="_blank">Basics for Beginners — Neural Networks — Part 3</a></h3>
-                                <p class="summary">Series of basics of machine learning - part 3</p>
+                                <h3 class="title toggle-btn">Kaggle —”Getting Started” - Digit Recognizer</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://medium.com/@xxxx/kaggle-getting-started-digit-recognizer-f1721b82c542" target="_blank">Read Blog on Medium</a></div>
+                                    <div class="summary-item"><a href="https://example.com/kaggle-digit-recognizer-code" target="_blank">Code Repository</a></div>
+                                    <div class="summary-item"><a href="https://example.com/kaggle-digit-recognizer-video" target="_blank">Video Tutorial</a></div>
+                                </div>
                             </div><!--//item-->
-
-
+                            
                             <div class="item">
-                                <h3 class="title"><a href="https://praveenkrishna.medium.com/basics-for-beginners-activation-functions-part-4-17a841834739" target="_blank">Basics for Beginners — Neural Networks — Part 4</a></h3>
-                                <p class="summary">Series of basics of machine learning - part 4</p>
+                                <h3 class="title toggle-btn">Downgrade CUDA for Tensorflow-GPU</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://medium.com/@xxxx/downgrade-cuda-for-tensorflow-gpu-17831db59099" target="_blank">Read Blog on Medium</a></div>
+                                    <div class="summary-item"><a href="https://example.com/downgrade-cuda-code" target="_blank">Code Repository</a></div>
+                                    <div class="summary-item"><a href="https://example.com/downgrade-cuda-video" target="_blank">Video Tutorial</a></div>
+                                </div>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title toggle-btn">Basics for Beginners—Machine Learning—Part 1</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://xxxx.medium.com/basics-for-beginners-machine-learning-part-1-fbd9550fc67f" target="_blank">Read Blog on Medium</a></div>
+                                    <div class="summary-item"><a href="https://example.com/ml-part1-code" target="_blank">Code Repository</a></div>
+                                    <div class="summary-item"><a href="https://example.com/ml-part1-video" target="_blank">Video Tutorial</a></div>
+                                </div>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title toggle-btn">Basics for Beginner—Neural Networks—Part 2</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://xxxx.medium.com/basics-for-beginners-neural-networks-part-2-8aea2b105aa0" target="_blank">Read Blog on Medium</a></div>
+                                    <div class="summary-item"><a href="https://example.com/nn-part2-code" target="_blank">Code Repository</a></div>
+                                    <div class="summary-item"><a href="https://example.com/nn-part2-video" target="_blank">Video Tutorial</a></div>
+                                </div>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title toggle-btn">Basics for Beginners—Neural Networks—Part 3</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://xxxx.medium.com/basics-for-beginners-paradigms-of-learning-part-3-b72840a5a728" target="_blank">Read Blog on Medium</a></div>
+                                    <div class="summary-item"><a href="https://example.com/nn-part3-code" target="_blank">Code Repository</a></div>
+                                    <div class="summary-item"><a href="https://example.com/nn-part3-video" target="_blank">Video Tutorial</a></div>
+                                </div>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title toggle-btn">Basics for Beginners—Neural Networks—Part 4</h3>
+                                <div class="summaries">
+                                    <div class="summary-item"><a href="https://xxxx.medium.com/basics-for-beginners-activation-functions-part-4-17a841834739" target="_blank">Read Blog on Medium</a></div>
+                                    <div class="summary-item"><a href="https://example.com/nn-part4-code" target="_blank">Code Repository</a></div>
+                                    <div class="summary-item"><a href="https://example.com/nn-part4-video" target="_blank">Video Tutorial</a></div>
+                                </div>
                             </div><!--//item-->
 
                             
