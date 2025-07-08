@@ -34,11 +34,7 @@
         }
         .row {
             width: 100%;
-            max-width: 1600px;
-        }
-        .primary {
-            width: 100%;
-            max-width: 100%;
+            max-width: 1200px;
         }
         @media (max-width: 768px) {
             .primary {
@@ -67,11 +63,12 @@
     </header><!--//header-->
     <div class="container sections-wrapper">
         <div class="row">
-            <div class="primary col-12">
+            <div class="primary col-lg-8 col-12">
                 <section id="about" class="about section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
+                            <img class="profile-image img-fluid rounded-circle mb-3" src="assets/images/profile.png" alt="profile image" />
                             <h6>Career Overview & Key Highlights</h6>
                             <p>Experienced Data Scientist and IT System Architect, with 9+ years in AI, machine learning, deep learning, and Kubernetes-based deployments. Expertise in MLOps, scalable AI models.. Passionate about AI-driven automation and real-world ML applications.</p>
                             <h6>Education</h6>
